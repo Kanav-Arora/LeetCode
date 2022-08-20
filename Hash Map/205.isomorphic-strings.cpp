@@ -7,7 +7,6 @@
 // @lc code=start
 class Solution {
 public:
-    bool isIsomorphic(string s, string t) {
         bool helper(string s, string t)
     {
         if(s.size()!=t.size())
@@ -31,7 +30,7 @@ public:
     bool isIsomorphic(string s, string t) {
         return helper(s,t) && helper(t,s);
     }
-    }
+    
 };
 // @lc code=end
 
